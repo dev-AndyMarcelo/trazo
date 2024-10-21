@@ -1,0 +1,162 @@
+/* src/components/HomePage.css */
+
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f2eb;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .homepage-left,
+  .homepage-right {
+    flex: 1 1 40%; /* Ocupa un 45% del ancho del contenedor */
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .logo {
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Aumentar el tamaño del texto */
+    color: #333;
+    font-weight: 700;
+  }
+  
+  h1 span {
+    color: #9e57ff; /* Color púrpura */
+    font-size: 4rem; /* Hacer el texto dentro del span más grande */
+  }
+  
+  
+  p {
+    font-size: 1.2rem;
+    color: #707070;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 15px;
+    font-size: 1rem;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 5px 0 0 5px;
+  }
+  /* 
+  button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  } */
+  
+  /* button:hover {
+    background-color: #9e57ff;
+  } */
+  
+  .homepage-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prendas-image {
+    max-width: 68%;
+    border-radius: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    align-items: center;
+    gap: 10px; /* Añade separación entre el input y el botón */
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%; /* Cambiamos a 100% para que tome todo el ancho disponible */
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    width: 100%; /* Hace que el botón también ocupe el ancho completo */
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #9e57ff;
+  }
+  
+  /* Media queries para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .homepage {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .homepage-left,
+    .homepage-right {
+      flex: 1 1 100%;
+    }
+  
+    .logo {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    input {
+      width: 100%;
+    }
+  
+    button {
+      width: 90%;
+      margin-top: 10px;
+    }
+  
+    .prendas-image {
+      max-width: 80%;
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .prendas-image {
+      max-width: 90%;
+    }
+  }

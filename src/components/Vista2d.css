@@ -1,0 +1,196 @@
+.vista2d-section {
+  padding: 2rem;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+/* Mejora en la disposición de las tarjetas */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Cambiado para permitir que las tarjetas se ajusten en múltiples filas */
+  margin: 60px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 15%;
+  /* max-width: 300px; */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Establece una altura fija para las imágenes */
+  overflow: hidden; /* Asegura que las imágenes más grandes no se desborden */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsión */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Ajuste para las flechas */
+.arrow {
+  font-size: 3.4rem;
+  color: #6b238e;
+  margin: 0 1rem;
+  display: inline-block;
+  /* Ajustamos la orientación de las flechas */
+}
+
+.input-section-vista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; /* Espacio debajo del input y botón */
+}
+
+.input-section-vista button:hover {
+  background-color: #9e57ff;
+}
+
+.input-section-vista input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del input */
+}
+
+.input-section-vista button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  height: 100%; /* Asegura que el botón tenga la misma altura que el input */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del botón */
+  margin-left: 10px;
+  width: 100px;
+}
+
+.input-section-vista button:hover {
+  background-color: #9e57ff;
+}
+
+/* Estilos para hacerlo más responsivo */
+@media (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .arrow {
+      font-size: 2rem;
+      margin: 1rem 0;
+  }
+
+  .input-section-vista {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-section-vista input,
+  .input-section-vista button {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-left: 0;
+  }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  max-width: 600px;
+  width: 90%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.modal-image img {
+  max-width: 350px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-info h2 {
+  margin-bottom: 10px;
+}
+
+.modal-info p {
+  margin-bottom: 20px;
+}
+
+.modal-info button {
+  background-color: #6b238e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-info button:hover {
+  background-color: #571c6c;
+}

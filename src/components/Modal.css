@@ -1,0 +1,129 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  /* flex-direction: column;  */
+  max-width: 800px;
+  width: 90%;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Imagen dentro del modal */
+.modal-image {
+  flex: 1; /* Hace que la imagen ocupe espacio flexible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  width:auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Información del modal */
+.modal-info {
+  flex: 2; /* Hace que la información textual ocupe más espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px; /* Espacio entre la imagen y el contenido textual */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.modal-info h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.modal-info p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.modal-info ul {
+  margin-bottom: 20px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.modal-info ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Botón de cierre */
+.modal-info button {
+  background-color: #6b238e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.modal-info button:hover {
+  background-color: #571c6c;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column; /* Cambiamos a columna en pantallas pequeñas */
+    padding: 15px;
+  }
+
+  .modal-image img {
+    max-width: 150px;
+    /* margin-bottom: 20px;  */
+  }
+
+  .modal-info {
+    padding-left: 0;
+    text-align: center; /* Centramos el texto en pantallas pequeñas */
+    font-size: 1rem;
+  }
+
+  .modal-info h2 {
+    font-size: 1rem;
+  }
+
+  .modal-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para pantallas grandes 
+@media (min-width: 1200px) {
+  .modal-content {
+    flex-direction: row; 
+    max-width: 1000px;
+    padding: 30px;
+  }
+
+  .modal-image img {
+    max-width: 300px;
+  }
+}*/
