@@ -21,7 +21,8 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage-left">
-        <img src="./imagenes/logo.png" alt="Alpaca Tech Logo" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/imagenes/logo-trace.png`} alt="Alpaca Tech Logo" className="logo" />
+
         <h1>
           Conoce la historia detrás <br /> de <span>cada producto</span>
         </h1>
@@ -38,7 +39,8 @@ const HomePage = () => {
       </div>
 
       <div className="homepage-right">
-        <img src="./imagenes/traza-imagen.png" alt="Prendas" className="prendas-image" />
+        <img src={`${process.env.PUBLIC_URL}/imagenes/traza-imagen.png`} alt="Prendas" className="prendas-image" />
+
       </div>
     </div>
   );

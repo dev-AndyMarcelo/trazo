@@ -11,7 +11,7 @@ function Vista2D() {
     "CITE-CH000": {
       cards: [
         {
-          cardImage: './imagenes/crianza.jpg',
+          cardImage: './imagenes/t1.JPG',
           modalImage: './imagenes/crianza-modal.JPG', // Imagen diferente para el modal
           user: 'Crianza',
           description: 'Prácticas de crianza y esquila enfocadas en la sostenibilidad y el bienestar animal.',
@@ -131,43 +131,61 @@ function Vista2D() {
           user: 'Transformación Secundaria',
           description: 'Segunda etapa de procesamiento del producto.',
           atributos: [
-            { nombre: 'Peso del hilo', valor: '150 gramos' },
-            { nombre: 'Categoría de la fibra', valor: 'Alpaca Premium' },
-            { nombre: 'Productor', valor: 'Hilanderías Unidas SAC' },
-            { nombre: 'Lugar de almacenamiento', valor: 'Arequipa, Perú' }
+            { nombre: 'Código del Hilo', valor: 'RJ2055, NM-500' },
+            { nombre: 'Color del hilo', valor: 'Rojo, Negro' },
+            { nombre: 'Titulación del Hilo', valor: '2/28, 2/28' },
+            { nombre: 'Sentido', valor: 'S, S' },
+            { nombre: 'Torción del Hilo', valor: '127, 37' },
+            { nombre: 'Peso del hilo', valor: '1000 g, 1000 g' }
           ]
         },
         {
           cardImage: '/imagenes/elaboracion.JPG',
-          modalImage: '/imagenes/crianza.jpg', // Imagen diferente para el modal
-          user: 'Diseño',
-          description: 'Proceso de diseño del producto antes de su fabricación.',
+          modalImage: '/imagenes/crianza.jpg', 
+          user: 'Diseño y Elaboración de Prendas',
+          description: 'Proceso de diseño y elaboración de prendas.',
           atributos: [
-            { nombre: 'Tipo de tejido', valor: 'Punto circular' },
-            { nombre: 'Dimensión de componentes', valor: '10x10 cm' },
-            { nombre: 'Forma de componentes', valor: 'Rectangular' },
-            { nombre: 'Tensión de componente', valor: 'Baja' },
-            { nombre: 'Tipo de puntos', valor: 'Punto liso' },
-            { nombre: 'Combinación de colores', valor: 'Azul y blanco' },
-            { nombre: 'Título de puntos', valor: 'Número 10' },
-            { nombre: 'Título de hilado', valor: '15/1' },
-            { nombre: 'Máquina galga', valor: '12 GG' },
-            { nombre: 'Técnicas', valor: 'Jacquard' },
-            { nombre: 'Diseñador', valor: 'Carlos Pérez' },
-            { nombre: 'Número de filas', valor: '200' },
-            { nombre: 'Número de agujas', valor: '180' },
-            { nombre: '% de encogimiento', valor: '5%' }
+            { nombre: 'Nombre de la prenda', valor: 'Cardigan de mujer' },
+            { nombre: 'Diseñador', valor: 'Yamil Arredondo' },
+            { nombre: 'Elaborado', valor: 'CITE Textil Camélidos Cusco' },
+            { nombre: 'Descripción', valor: 'Cardigan tejido en punto con mangas acampanadas y detalle de iconografía tradicional en la pretina. Hecho 100% de baby alpaca, combinando suavidad y calidez para las estaciones de otoño e invierno. Una pieza moderna con esencia tradicional.' },
+            { nombre: 'Técnica de tejido', valor: 'Punto jersey' },
+            { nombre: 'Máquina utilizada', valor: 'Máquina rectilínea doméstica Brother Palie, galga 6' },
+            { nombre: 'Combinación de colores', valor: 'Rojo, Negro' },
+            { nombre: 'Cantidad de componentes', valor: '6' },
+            { nombre: 'Descripción de los componentes', valor: 'Delantero, Espalda, Manga derecha, Manga izquierda, Pretina' },
+            { nombre: 'Peso total', valor: '500 g' },
+            { nombre: 'Temporada recomendada', valor: 'Otoño - Invierno' },
+            { nombre: 'Tallas disponibles', valor: 'M' },
+            { nombre: 'Instrucciones de cuidado', valor: 'Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol' },
+            { nombre: 'Historia del diseño', valor: 'Este cardigan es una reinterpretación de una prenda tradicional andina, adaptada para un mercado más comercial sin perder su esencia cultural. Las iconografías en la pretina evocan los diseños ancestrales, dándole un toque único y contemporáneo.' }
+          ]
+        },
+        {
+          cardImage: '/imagenes/comercializacion.png', // Si tienes una imagen de comercialización
+          modalImage: '/imagenes/comercializacion.png', // Imagen diferente para el modal de comercialización
+          user: 'Comercialización',
+          description: 'Detalles sobre la comercialización de la prenda.',
+          atributos: [
+            { nombre: 'Fecha de disponibilidad', valor: '24/10/2024' },
+            { nombre: 'Costo de producción', valor: '187' },
+            { nombre: 'Valor del mercado aproximado', valor: '300' },
+            { nombre: 'Cantidad mínima de producción', valor: '20' },
+            { nombre: 'Detalles de packaging', valor: 'N/A' }, // Si tienes detalles específicos, puedes agregar más aquí.
+            { nombre: 'Historia del impacto social de la prenda', valor: 'Apoya a artesanas de Chincheros, promoviendo la conservación de técnicas tradicionales.' }
           ]
         }
-        // Otras cartas
       ],
       attributeImages: {
-        'Tipo de tejido': '/imagenes/1.png',
-        'Dimensión de componentes': '/imagenes/2.png',
-        'Forma de componentes': '/imagenes/3.png',
-        'Tensión de componente': '/imagenes/tension-5678.jpg'
+        'Código del Hilo': '/imagenes/hilo-codigo.png', // Puedes agregar nuevas imágenes de atributos si lo deseas
+        'Color del hilo': '/imagenes/color-hilo.png',
+        'Titulación del Hilo': '/imagenes/titulacion-hilo.png',
+        'Sentido': '/imagenes/sentido-hilo.png',
+        'Torción del Hilo': '/imagenes/torcion-hilo.png',
+        'Peso del hilo': '/imagenes/peso-hilo.png'
       }
     }
+
   };
 
   const [selectedCard, setSelectedCard] = useState(null);

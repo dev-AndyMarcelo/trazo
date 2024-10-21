@@ -17,8 +17,8 @@
   border-radius: 10px;
   display: flex;
   /* flex-direction: column;  */
-  max-width: 800px;
-  width: 90%;
+  max-width: 90%;
+  /* width: 90%; */
   overflow: hidden;
   padding: 20px;
   box-sizing: border-box;

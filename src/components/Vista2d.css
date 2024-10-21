@@ -1,6 +1,17 @@
+/* .vista2d-section {
+  padding: 2rem;
+  background-image: url('/public/imagenes/fondo2.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  text-align: center;
+  min-height: 100vh; 
+} */
+
 .vista2d-section {
   padding: 2rem;
-  background-color: #f0f4f8;
+  background-color: #f8f2eb;
   text-align: center;
 }
 

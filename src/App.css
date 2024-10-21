@@ -1,7 +1,7 @@
 body {
   margin: 0;
   height: 100vh; /* Ajusta la altura al 100% de la ventana */
-  background-color: #f0f4f8;
+  background-color: #f8f2eb;
 }
 
 .main-section {
@@ -12,5 +12,5 @@ body {
   align-items: center;
   text-align: center;
   padding: 2rem 2rem;
-  background-color: #e0e7f0;
+  background-color: #f8f2eb;
 }
