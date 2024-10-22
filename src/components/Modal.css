@@ -16,13 +16,14 @@
   background-color: white;
   border-radius: 10px;
   display: flex;
-  /* flex-direction: column;  */
+  flex-direction: row; /* Asegura que el contenido se apile verticalmente */
   max-width: 90%;
-  /* width: 90%; */
-  overflow: hidden;
+  max-height: 90vh; /* Limitar la altura para que no sobrepase la pantalla */
+  overflow-y: auto; /* Habilitar el scroll vertical */
   padding: 20px;
   box-sizing: border-box;
 }
+
 
 /* Imagen dentro del modal */
 .modal-image {
@@ -33,8 +34,8 @@
 }
 
 .modal-image img {
-  width:auto;
-  height: auto;
+  max-width:700px;
+  max-height: 500px;
   border-radius: 10px;
 }
 
@@ -44,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px; /* Espacio entre la imagen y el contenido textual */
+  padding-left: 80px; /* Espacio entre la imagen y el contenido textual */
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
@@ -96,7 +97,7 @@
   }
 
   .modal-image img {
-    max-width: 150px;
+    max-width: 250px;
     /* margin-bottom: 20px;  */
   }
 
@@ -115,15 +116,3 @@
   }
 }
 
-/* Estilos para pantallas grandes 
-@media (min-width: 1200px) {
-  .modal-content {
-    flex-direction: row; 
-    max-width: 1000px;
-    padding: 30px;
-  }
-
-  .modal-image img {
-    max-width: 300px;
-  }
-}*/

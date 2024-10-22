@@ -8,11 +8,12 @@
   position: relative; /* Fija la barra en la parte superior */
   width: 95%; /* Hace que la barra ocupe todo el ancho de la pantalla */
   z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+  font-family: 'Arial', sans-serif;
 }
 
-.logo {
-  flex: 1; /* Ocupa todo el espacio disponible en pantallas pequeñas */
-  text-align: left; 
+.logo a {
+  text-decoration: none; /* Quita el subrayado */
+  color: black; /* Cambia el color a negro */
 }
 
 .nav-links {
@@ -66,7 +67,7 @@
   }
 
   .nav-links li a {
-    font-size: 1.2rem; /* Reduce el tamaño de la fuente en móviles */
+    font-size: 1.9rem; /* Reduce el tamaño de la fuente en móviles */
   }
 
   .logo {
@@ -80,4 +81,3 @@
     margin-top: 10px;
   }
 }
-

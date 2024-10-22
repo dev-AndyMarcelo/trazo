@@ -72,11 +72,12 @@
 
 /* Ajuste para las flechas */
 .arrow {
-  font-size: 3.4rem;
+  font-size: 4rem;
   color: #6b238e;
   margin: 0 1rem;
   display: inline-block;
-  /* Ajustamos la orientación de las flechas */
+  /* align-self: center; 
+  transform: translateY(-50%);  */
 }
 
 .input-section-vista {
@@ -172,18 +173,17 @@
   overflow: hidden;
   padding: 20px;
 }
-
+/* 
 .modal-image img {
   max-width: 350px;
   border-radius: 10px;
-  margin-right: 20px;
-}
+} */
 
-.modal-info {
+/* .modal-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .modal-info h2 {
   margin-bottom: 10px;

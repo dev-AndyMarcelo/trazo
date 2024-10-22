@@ -9,127 +9,118 @@ function Vista2D() {
   // Definir los datos que cambian en base al código ingresado
   const datosPorCodigo = {
     "CITE-CH000": {
-      cards: [
+    "cards": [
+      {
+        "cardImage": "/imagenes/crianza.jpg",
+        "modalImage": "/imagenes/crianza-modal.JPG",
+        "user": "Crianza y Esquila",
+        "description": "Prácticas de crianza y esquila enfocadas en la sostenibilidad y el bienestar animal.",
+        "atributos": [
+          { "nombre": "Ubicación", "valor": "Cusco, Perú" },
+          { "nombre": "Raza de animal", "valor": "Alpaca" },
+          { "nombre": "Color del Animal", "valor": "Blanco" },
+          { "nombre": "Edad del Animal", "valor": "2 años" },
+          { "nombre": "Registro de sanidad", "valor": "Activo" },
+          { "nombre": "Registro Reproductivo", "valor": "Historial disponible" },
+          { "nombre": "Registro de Alimentación", "valor": "Controlado" },
+          { "nombre": "Criador", "valor": "Juan Pérez" },
+          { "nombre": "Peso de la Fibra", "valor": "4 kg" },
+          { "nombre": "Aplicó técnica 231-370:2019", "valor": "Sí" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/acopio.jpg",
+        "modalImage": "/imagenes/acopio-modal.jpg",
+        "user": "Acopio y Clasificación",
+        "description": "Recogida y clasificación de la fibra obtenida.",
+        "atributos": [
+          { "nombre": "Procedencia", "valor": "Ayacucho, Perú" },
+          { "nombre": "Ubicación", "valor": "Centro de Acopio A" },
+          { "nombre": "Categorización", "valor": "Categoría A" },
+          { "nombre": "Clasificación", "valor": "Calidad 1" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-2.JPG",
+        "modalImage": "/imagenes/t2-3.JPG",
+        "user": "Transformación Primaria",
+        "description": "Proceso de lavado, cardado y peinado de la fibra.",
+        "atributos": [
+          { "nombre": "Escamenado", "valor": "Sí" },
+          { "nombre": "Cardado", "valor": "Sí" },
+          { "nombre": "Lavado", "valor": "Sí" },
+          { "nombre": "Hilado Artesanal", "valor": "Sí" },
+          { "nombre": "Titulación", "valor": "30 Nm" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Cantidad de Hebras", "valor": "5" },
+          { "nombre": "Color", "valor": "Natural" },
+          { "nombre": "Calidad", "valor": "Alta" },
+          { "nombre": "Peso", "valor": "1 kg" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/t2-1.JPG",
+        "modalImage": "/imagenes/hilo-celeste.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "H234" },
+          { "nombre": "Color del hilo", "valor": "Celeste" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Torción del Hilo", "valor": "Z" },
+          { "nombre": "Peso del hilo", "valor": "150 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-1.JPG",
+        "modalImage": "/imagenes/t2-8.JPG",
+        "user": "Diseño y Elaboración de Prendas",
+        "description": "Diseño y confección de las prendas finales.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Chaleco de mujer" },
+          { "nombre": "Diseñador", "valor": "Daniela Oviedo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Camisa de algodón ligera." },
+          { "nombre": "Técnica de tejido", "valor": "Punto, tejido plano" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina de coser industrial" },
+          { "nombre": "Combinación de colores", "valor": "Blanco y azul" },
+          { "nombre": "Cantidad de componentes", "valor": "2" },
+          { "nombre": "Descripción de los componentes", "valor": "100% algodón" },
+          { "nombre": "Peso total", "valor": "500 g" },
+          { "nombre": "Temporada recomendada", "valor": "Primavera-Verano" },
+          { "nombre": "Tallas disponibles", "valor": "S, M, L, XL" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano, no blanquear" },
+          { "nombre": "Historia del diseño", "valor": "Inspirada en la moda urbana." }
+        ]
+      },
         {
-          cardImage: './imagenes/t1.JPG',
-          modalImage: './imagenes/crianza-modal.JPG', // Imagen diferente para el modal
-          user: 'Crianza',
-          description: 'Prácticas de crianza y esquila enfocadas en la sostenibilidad y el bienestar animal.',
-          atributos: [
-            { nombre: 'Crianza y Esquila', valor: 'Sí' }, // Ajustado según tus requerimientos
-            { nombre: 'Ubicación', valor: 'Cusco, Perú' },
-            { nombre: 'Raza de animal', valor: 'Alpaca' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Color del Animal', valor: 'Blanco' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Edad del Animal', valor: '2 años' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Registro de sanidad', valor: 'Activo' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Registro Reproductivo', valor: 'Historial disponible' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Registro de Alimentación', valor: 'Controlado' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Criador', valor: 'Juan Pérez' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Peso de la Fibra', valor: '4 kg' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Aplicó técnica 231-370:2019', valor: 'Sí' } // Ejemplo, cambia según corresponda
+          "cardImage": "/imagenes/comercializacion.JPG",
+          "modalImage": "/imagenes/comercializacion.JPG",
+          "user": "Comercialización",
+          "description": "Venta de las prendas al consumidor final.",
+          "atributos": [
+            { "nombre": "Fecha de disponibilidad", "valor": "01/12/2024" },
+            { "nombre": "Costo de producción", "valor": "20.00" },
+            { "nombre": "Valor del mercado aproximado", "valor": "35.00" },
+            { "nombre": "Cantidad mínima de producción", "valor": "100 unidades" },
+            { "nombre": "Detalles de packaging", "valor": "Caja de cartón reciclable" },
+            { "nombre": "Historia del impacto social de la prenda", "valor": "Contribución a la comunidad local." }
           ]
-        },
-        {
-          cardImage: '/imagenes/acopio.jpg',
-          modalImage: '/imagenes/acopio-modal.jpg', // Imagen diferente para el modal
-          user: 'Acopio',
-          description: 'Recogida y clasificación de la fibra obtenida.',
-          atributos: [
-            { nombre: 'Acopio y Clasificación', valor: 'Sí' }, // Ajustado según tus requerimientos
-            { nombre: 'Procedencia', valor: 'Ayacucho, Perú' },
-            { nombre: 'Ubicación', valor: 'Centro de Acopio A' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Categorización', valor: 'Categoría A' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Clasificación', valor: 'Calidad 1' } // Ejemplo, cambia según corresponda
-          ]
-        },
-        {
-          cardImage: '/imagenes/t1.JPG',
-          modalImage: '/imagenes/t1-modal.jpg', // Imagen diferente para el modal
-          user: 'Transformación Primaria',
-          description: 'Proceso de lavado, cardado y peinado de la fibra.',
-          atributos: [
-            { nombre: 'Transformación Primaria', valor: 'Sí' }, // Ajustado según tus requerimientos
-            { nombre: 'Escamenado', valor: 'Sí' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Cardado', valor: 'Sí' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Lavado', valor: 'Sí' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Hilado Artesanal', valor: 'Sí' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Peso del Hilado Artesanal', valor: '200 g' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Titulación', valor: '30 Nm' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Cantidad de Hebras', valor: '5' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Color', valor: 'Natural' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Calidad', valor: 'Alta' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Peso', valor: '1 kg' } // Ejemplo, cambia según corresponda
-          ]
-        },
-        {
-          cardImage: '/imagenes/t2-1.JPG',
-          modalImage: '/imagenes/t2-model.png', // Imagen diferente para el modal
-          user: 'Transformación Secundaria',
-          description: 'Proceso de hilado y teñido de la fibra cardada.',
-          atributos: [
-            { nombre: 'Peso del hilo', valor: '150 gramos' },
-            { nombre: 'Categoría de la fibra', valor: 'Alpaca Premium' },
-            { nombre: 'Productor', valor: 'Hilanderías Unidas SAC' },
-            { nombre: 'Lugar de almacenamiento', valor: 'Arequipa, Perú' },
-            { nombre: 'Densidad lineal', valor: '200 tex' },
-            { nombre: 'Micronaje', valor: '22 micrones' },
-            { nombre: 'Torsión del hilado', valor: 'Z' },
-            { nombre: 'Finura', valor: 'Muy fina' },
-            { nombre: 'Solidez', valor: 'Alta' }
-          ]
-        },
-        {
-          cardImage: '/imagenes/ela-2.JPG',
-          modalImage: '/imagenes/waka.jpeg', // Imagen diferente para el modal
-          user: 'Elaboración',
-          description: 'Diseño y confección de las prendas finales.',
-          atributos: [
-            { nombre: 'Tipo de prenda', valor: 'Camisa' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Diseñado por', valor: 'Juan Pérez' }, // Ejemplo, cambia según corresponda
-            { nombre: 'Descripción de la prenda', valor: 'Camisa de algodón ligera.' }, // Ejemplo
-            { nombre: 'Elaborado por', valor: 'Taller de Costura XYZ' }, // Ejemplo
-            { nombre: 'Técnicas de tejido', valor: 'Punto, tejido plano' }, // Ejemplo
-            { nombre: 'Máquina utilizada', valor: 'Máquina de coser industrial' }, // Ejemplo
-            { nombre: 'Combinación de colores', valor: 'Blanco y azul' }, // Ejemplo
-            { nombre: 'Descripción de componentes', valor: '100% algodón' }, // Ejemplo
-            { nombre: 'Dimensión de componentes', valor: '30x40 cm (mangas)' }, // Ejemplo
-            { nombre: 'Peso de la prenda', valor: '500 gramos' }, // Ejemplo, según ya estaba
-            { nombre: 'Temporada', valor: 'Primavera-Verano' }, // Ejemplo, según ya estaba
-            { nombre: 'Tallas Disponibles', valor: 'S, M, L, XL' }, // Ejemplo, según ya estaba
-            { nombre: 'Consideraciones del diseño', valor: 'Ajuste regular' }, // Ejemplo
-            { nombre: 'Historia detrás del diseño', valor: 'Inspirada en la moda urbana.' } // Ejemplo
-          ]
-        },
-        {
-          cardImage: '/imagenes/elaboracion.JPG',
-          modalImage: '/imagenes/comercializacion-modal.jpg', // Imagen diferente para el modal
-          user: 'Comercialización',
-          description: 'Venta de las prendas al consumidor final.',
-          atributos: [
-            { nombre: 'Fecha de disponibilidad', valor: '01/12/2024' }, // Ejemplo
-            { nombre: 'Costo de producción', valor: '$20.00' }, // Ejemplo
-            { nombre: 'Valor del mercado aproximado', valor: '$35.00' }, // Ejemplo
-            { nombre: 'Escalas de sostenibilidad', valor: 'Alta' }, // Ejemplo
-            { nombre: 'Cantidad mínima de producción', valor: '100 unidades' }, // Ejemplo
-            { nombre: 'Código QR', valor: 'QR123456789' }, // Ejemplo
-            { nombre: 'Historia del impacto social de la prenda', valor: 'Contribución a la comunidad local.' } // Ejemplo
-          ]
-        }        
+        }
       ],
-      attributeImages: {
-        'Tipo de tejido': '/imagenes/3.png',
-        'Dimensión de componentes': '/imagenes/2.png',
-        'Forma de componentes': '/imagenes/1.png',
-        'Tensión de componente': '/imagenes/tension-1234.jpg'
+      "attributeImages": {
+        "Tipo de tejido": "/imagenes/3.png"
       }
     },
+
     "CITE-CH001": {
       cards: [
         {
-          cardImage: '/imagenes/t2.JPG',
-          modalImage: '/imagenes/ela-2.JPG', 
+          cardImage: '/imagenes/t2-9.JPG',
+          modalImage: '/imagenes/hilo-rojo.jpg', 
           user: 'Transformación Secundaria',
-          description: 'Segunda etapa de procesamiento del producto.',
+          description: 'Proceso de hilado y teñido de la fibra cardada.',
           atributos: [
             { nombre: 'Código del Hilo', valor: 'RJ2055, NM-500' },
             { nombre: 'Color del hilo', valor: 'Rojo, Negro' },
@@ -140,9 +131,9 @@ function Vista2D() {
           ]
         },
         {
-          cardImage: '/imagenes/elaboracion.JPG',
-          modalImage: '/imagenes/crianza.jpg', 
-          user: 'Diseño y Elaboración de Prendas',
+          cardImage: '/imagenes/ela-2.JPG',
+          modalImage: '/imagenes/t2-11.JPG', 
+          user: 'Diseño y Elaboración de Cardigan de mujer',
           description: 'Proceso de diseño y elaboración de prendas.',
           atributos: [
             { nombre: 'Nombre de la prenda', valor: 'Cardigan de mujer' },
@@ -162,8 +153,8 @@ function Vista2D() {
           ]
         },
         {
-          cardImage: '/imagenes/comercializacion.png', // Si tienes una imagen de comercialización
-          modalImage: '/imagenes/comercializacion.png', // Imagen diferente para el modal de comercialización
+          cardImage: '/imagenes/C1.JPG', // Si tienes una imagen de comercialización
+          modalImage: '/imagenes/C1-modal.JPG', // Imagen diferente para el modal de comercialización
           user: 'Comercialización',
           description: 'Detalles sobre la comercialización de la prenda.',
           atributos: [
@@ -177,14 +168,686 @@ function Vista2D() {
         }
       ],
       attributeImages: {
-        'Código del Hilo': '/imagenes/hilo-codigo.png', // Puedes agregar nuevas imágenes de atributos si lo deseas
-        'Color del hilo': '/imagenes/color-hilo.png',
-        'Titulación del Hilo': '/imagenes/titulacion-hilo.png',
-        'Sentido': '/imagenes/sentido-hilo.png',
-        'Torción del Hilo': '/imagenes/torcion-hilo.png',
-        'Peso del hilo': '/imagenes/peso-hilo.png'
+        'Color del hilo': '/imagenes/hilo-negro.jpg',
+      }
+    },
+    "CITE-CH002": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-1.JPG",
+        "modalImage": "/imagenes/hilo-rojo.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "RJ2055, NM-500" },
+          { "nombre": "Color del hilo", "valor": "Rojo, Negro" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28, 2/28" },
+          { "nombre": "Sentido", "valor": "S, S" },
+          { "nombre": "Torción del Hilo", "valor": "127, 37" },
+          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-3.JPG",
+        "modalImage": "/imagenes/t2-2.JPG",
+        "user": "Diseño y Elaboración de Falda tipo pollera de mujer",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Falda tipo pollera de mujer" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Falda inspirada en la tradicional pollera de las mujeres de Chinchero, tejida en punto pavo real con calado en la pretina alta. Hecha 100% de baby alpaca, combina la tradición andina con un toque contemporáneo, ideal para la temporada otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Calado en punto pavo real" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Rojo, Negro" },
+          { "nombre": "Cantidad de componentes", "valor": "3" },
+          { "nombre": "Descripción de los componentes", "valor": "Delantero, Posterior, Pretina" },
+          { "nombre": "Peso total", "valor": "300g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Esta falda atemporal es una reinterpretación moderna de la pollera tradicional de las mujeres de Chinchero, manteniendo vivos los detalles y técnicas artesanales, pero adaptada a una prenda más ligera y versátil para el día a día." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C2.JPG",
+        "modalImage": "/imagenes/C2-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "148" },
+          { "nombre": "Valor del mercado aproximado", "valor": "300" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Contribuye a la economía local y la preservación cultural." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        'Color del hilo': '/imagenes/hilo-negro.jpg',
+      }
+    },
+
+    "CITE-CH003": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-2.JPG",
+        "modalImage": "/imagenes/hilo-rojo.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "RJ2055, NM-500" },
+          { "nombre": "Color del hilo", "valor": "Rojo, Negro" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28, 2/28" },
+          { "nombre": "Sentido", "valor": "S, S" },
+          { "nombre": "Torción del Hilo", "valor": "127, 37" },
+          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-2.JPG",
+        "modalImage": "/imagenes/t2-3.JPG",
+        "user": "Diseño y Elaboración de --------",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Cardigan de mujer" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Elegante cardigan de mujer en tejido de punto con mangas pegadas, adornado con un detalle de iconografía en la pretina. Confeccionado 100% en baby alpaca, esta prenda combina confort y estilo, perfecta para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Punto jersey" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Rojo, Negro" },
+          { "nombre": "Cantidad de componentes", "valor": "6" },
+          { "nombre": "Descripción de los componentes", "valor": "Delantero, Espalda, Manga derecha, Manga izquierda, Pretina" },
+          { "nombre": "Peso total", "valor": "500 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Esta prenda tradicional ha sido reinterpretada y adaptada en un cardigan más comercial, manteniendo su esencia cultural y brindando un estilo moderno y versátil." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/comercializacion.JPG",
+        "modalImage": "/imagenes/comercializacion.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "400" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Fortalece el trabajo de comunidades indígenas en la confección." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        'Color del hilo': '/imagenes/hilo-negro.jpg',
+      }
+    },
+    
+    "CITE-CH004": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-3.JPG",
+        "modalImage": "/imagenes/hilo-blanco.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Segunda etapa de procesamiento del producto.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "NM-500, SFN-100" },
+          { "nombre": "Color del hilo", "valor": "Negro, Blanco" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28, 2/28" },
+          { "nombre": "Sentido", "valor": "S, S" },
+          { "nombre": "Torción del Hilo", "valor": "37, 38" },
+          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-3.JPG",
+        "modalImage": "/imagenes/t2-4.JPG",
+        "user": "Diseño y Elaboración de Pantalón recto de mujer",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Pantalón recto de mujer" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Pantalón recto de mujer con pretina alta, adornado con detalles de bordado en tejido de punto pavo real. Confeccionado 100% en baby alpaca, este pantalón atemporal presenta aplicaciones bordadas con hilos de fantasía, aportando un toque único y sofisticado a cualquier atuendo para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Calado en punto pavo real" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Negro, Blanco" },
+          { "nombre": "Cantidad de componentes", "valor": "3" },
+          { "nombre": "Descripción de los componentes", "valor": "Pieza izquierda, Pieza derecha, Pretina" },
+          { "nombre": "Peso total", "valor": "300 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este pantalón es una reinterpretación de una prenda masculina tradicional, adaptada al estilo contemporáneo femenino, fusionando técnicas artesanales con un diseño moderno y funcional." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/comercializacion.JPG",
+        "modalImage": "/imagenes/comercializacion.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "350" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Apoya a artesanas que preservan el bordado tradicional andino." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        'Color del hilo': '/imagenes/hilo-negro.jpg',
+      }
+    },
+
+    "CITE-CH005": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-4.JPG",
+        "modalImage": "/imagenes/hilo-rojo.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "RJ2055, M2336, M2327, F2436, AZ1660" },
+          { "nombre": "Color del hilo", "valor": "Rojo, Amarillo, Verde, Celeste, Azul" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28, 1/5, 1/28, 2/16, 1/5" },
+          { "nombre": "Sentido", "valor": "S, -, S, S, -" },
+          { "nombre": "Torción del Hilo", "valor": "127, -, 140, 121, -" },
+          { "nombre": "Peso del hilo", "valor": "1000 g cada uno" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-4.JPG",
+        "modalImage": "/imagenes//t2-5.JPG",
+        "user": "Diseño y Elaboración de Chaleco de mujer",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Chaleco de mujer" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Chaleco de mujer con un diseño listado multicolor, confeccionado en punto jersey y punto panal. Utilizando hilo faltasia, hilo bluque y hilo liso en título 2/28, esta prenda está hecha 100% de baby alpaca, ofreciendo calidez y estilo para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Jersey, punto retenido, punto panal" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Rojo, Amarillo, Verde, Celeste, Azul" },
+          { "nombre": "Cantidad de componentes", "valor": "4" },
+          { "nombre": "Descripción de los componentes", "valor": "Delantero izquierdo, Delantero derecho, Espalda, Pretina" },
+          { "nombre": "Peso total", "valor": "700 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Inspirado en las mantas tradicionales de las mujeres de Chinchero, este chaleco fusiona la herencia cultural con un diseño contemporáneo, brindando versatilidad y elegancia." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/comercializacion.JPG",
+        "modalImage": "/imagenes/comercializacion.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "400" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Impulsa el desarrollo de habilidades artesanales en mujeres locales." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "Código del Hilo": "/imagenes/hilo-amarillo.jpg",
+        "Color del hilo": "/imagenes/hilo-verde.jpg",
+        "Titulación del Hilo": "/imagenes/hilo-celeste.jpg",
+        "Sentido": "/imagenes/hilo-azul.jpg",
+      }
+    },
+
+    "CITE-CH006": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-5.JPG",
+        "modalImage": "/imagenes/hilo-negro.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "NM-500" },
+          { "nombre": "Color del hilo", "valor": "Negro" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Torción del Hilo", "valor": "37" },
+          { "nombre": "Peso del hilo", "valor": "1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-1.JPG",
+        "modalImage": "/imagenes/t2-6.JPG",
+        "user": "Diseño y Elaboración de Vestido Negro",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Vestido" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Vestido de corte recto en punto jersey, con cuello redondo y diseño enterizo. Esta prenda, confeccionada en 100% baby alpaca, combina la comodidad y el estilo, convirtiéndose en una opción ideal para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Jersey" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Negro" },
+          { "nombre": "Cantidad de componentes", "valor": "4" },
+          { "nombre": "Descripción de los componentes", "valor": "Delantero, Posterior, Pretina" },
+          { "nombre": "Peso total", "valor": "300 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este vestido de corte recto es una reinterpretación atemporal de la tradicional prenda Huncu de la cultura Chincheros, que fusiona elementos culturales con un diseño contemporáneo, ideal para cualquier ocasión." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C6.JPG",
+        "modalImage": "/imagenes/C6-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "400" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Genera ingresos para comunidades que utilizan técnicas de tejido tradicionales." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "a": "/imagenes/hilo-codigo.png",
+      }
+    },
+
+    "CITE-CH007": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-6.JPG",
+        "modalImage": "/imagenes/hilo-rojo.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "RJ2055, M2336, M2327, F2436, AZ1660" },
+          { "nombre": "Color del hilo", "valor": "Rojo, Amarillo, Verde, Celeste, Azul" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28, 1/5, 1/28, 2/16, 1/5" },
+          { "nombre": "Sentido", "valor": "S, -, S, S, -" },
+          { "nombre": "Torción del Hilo", "valor": "127, -, 140, 121, -" },
+          { "nombre": "Peso del hilo", "valor": "1000 g cada uno" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-2.JPG",
+        "modalImage": "/imagenes/t2-7.JPG",
+        "user": "Diseño y Elaboración de Bolero",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Bolero" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Elegante bolero multicolor con mangas globo, confeccionado en punto panal y retenido. Este diseño utiliza hilo liso continuo y hilo fantasía bucle, ofreciendo un estilo único y sofisticado. Ideal para complementar cualquier atuendo de otoño-invierno, combina calidez y elegancia en una sola prenda." },
+          { "nombre": "Técnica de tejido", "valor": "Punto panal / retenido" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Rojo, Amarillo, Verde, Celeste, Azul" },
+          { "nombre": "Cantidad de componentes", "valor": "3" },
+          { "nombre": "Descripción de los componentes", "valor": "Cuerpo, Manga derecha, Manga izquierda, Pretina" },
+          { "nombre": "Peso total", "valor": "300 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este bolero está inspirado en las prendas tradicionales de las mujeres de Chinchero, fusionando la herencia cultural con un diseño moderno, lo que lo convierte en una pieza versátil y atemporal." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C7.JPG",
+        "modalImage": "/imagenes/C7-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "400" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Fomenta la identidad cultural y la moda sostenible." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "Código del Hilo": "/imagenes/hilo-amarillo.jpg",
+        "Color del hilo": "/imagenes/hilo-verde.jpg",
+        "Titulación del Hilo": "/imagenes/hilo-celeste.jpg",
+        "Sentido": "/imagenes/hilo-azul.jpg",
+      }
+    },
+
+    "CITE-CH008": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-7.JPG",
+        "modalImage": "/imagenes/hilo-negro.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "NM-500" },
+          { "nombre": "Color del hilo", "valor": "Negro" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Torción del Hilo", "valor": "37" },
+          { "nombre": "Peso del hilo", "valor": "1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-3.JPG",
+        "modalImage": "/imagenes/t2-8.JPG",
+        "user": "Diseño y Elaboración de Top",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Top" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Top negro en punto retenido con estructura simétrica y detalles de pasadores en la parte posterior. Este diseño contemporáneo combina la elegancia y la comodidad, convirtiéndolo en una opción ideal para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Punto panal / retenido" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Negro" },
+          { "nombre": "Cantidad de componentes", "valor": "2" },
+          { "nombre": "Descripción de los componentes", "valor": "Cuerpo, Tirantes" },
+          { "nombre": "Peso total", "valor": "200 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Inspirado en las formas geométricas de las estructuras coloniales de la cultura chinchera, este top fusiona elementos tradicionales con un estilo moderno, creando una pieza versátil y atemporal." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C8.JPG",
+        "modalImage": "/imagenes/C8-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "150" },
+          { "nombre": "Valor del mercado aproximado", "valor": "300" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Contribuye a la preservación de la cultura textil andina." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "a": "/imagenes/hilo-codigo.png",
+      }
+    },
+
+    "CITE-CH009": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-9.JPG",
+        "modalImage": "/imagenes/hilo-negro.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "NM-500" },
+          { "nombre": "Color del hilo", "valor": "Negro" },
+          { "nombre": "Titulación del Hilo", "valor": "2/28" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Torción del Hilo", "valor": "37" },
+          { "nombre": "Peso del hilo", "valor": "1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-4.JPG",
+        "modalImage": "/imagenes/t2-10.JPG",
+        "user": "Diseño y Elaboración de Pantalón de bota acampanada",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Pantalón de bota acampanada" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Pantalón de bota acampanada confeccionado en tejido de punto calado en color negro, adornado con un elegante diseño de rombos. Esta prenda combina la tradición con la modernidad, ofreciendo un estilo distintivo y versátil para la temporada de otoño-invierno." },
+          { "nombre": "Técnica de tejido", "valor": "Calado" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Negro" },
+          { "nombre": "Cantidad de componentes", "valor": "3" },
+          { "nombre": "Descripción de los componentes", "valor": "Pierna derecha, Pierna izquierda, Pretina" },
+          { "nombre": "Peso total", "valor": "400 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este pantalón está inspirado en las polleras tradicionales, adaptadas a un diseño moderno, fusionando la herencia cultural con tendencias contemporáneas, ideal para quienes buscan estilo y comodidad." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C9.JPG",
+        "modalImage": "/imagenes/C9-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "200" },
+          { "nombre": "Valor del mercado aproximado", "valor": "400" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Contribuye a la preservación de la cultura textil andina." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "a": "/imagenes/hilo-codigo.png",
+      }
+    },
+
+    "CITE-CH0010": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-11.JPG",
+        "modalImage": "/imagenes/hilo-celeste.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "FJ1451, F2436" },
+          { "nombre": "Color del hilo", "valor": "Gris, Celeste" },
+          { "nombre": "Titulación del Hilo", "valor": "1/3, 2/16" },
+          { "nombre": "Sentido", "valor": "-, S" },
+          { "nombre": "Torción del Hilo", "valor": "-, 121" },
+          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-1.JPG",
+        "modalImage": "/imagenes/t2-1.JPG",
+        "user": "Diseño y Elaboración de Abrigo largo",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Abrigo largo" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Abrigo largo confeccionado en lana, con un diseño entallado que combina hilo de fantasía y hilo liso. Presenta aplicaciones en crochet en el cuello, añadiendo un toque artesanal y elegante a la prenda. Ideal para los días fríos de otoño e invierno, este abrigo es tanto funcional como estiloso." },
+          { "nombre": "Técnica de tejido", "valor": "Jacquard" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Gris, Celeste" },
+          { "nombre": "Cantidad de componentes", "valor": "6" },
+          { "nombre": "Descripción de los componentes", "valor": "Delanteros, Posterior, Manga derecha, Manga izquierda, Cuello" },
+          { "nombre": "Peso total", "valor": "1000 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este abrigo está inspirado en los fajines utilizados en trajes tradicionales, fusionando la rica herencia cultural con un estilo contemporáneo, perfecto para quienes valoran la moda con significado." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C10.JPG",
+        "modalImage": "/imagenes/C10-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "300" },
+          { "nombre": "Valor del mercado aproximado", "valor": "500" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "fomenta el trabajo artesanal y la sostenibilidad en la moda." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "Código del Hilo": "/imagenes/hilo-gris.jpg",
+      }
+    },
+
+    "CITE-CH0011": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/t2-2.JPG",
+        "modalImage": "/imagenes/hilo-gris.jpg",
+        "user": "Transformación Secundaria",
+        "description": "Proceso de hilado y teñido de la fibra cardada.",
+        "atributos": [
+          { "nombre": "Código del Hilo", "valor": "FJ1451, T-M729" },
+          { "nombre": "Color del hilo", "valor": "Gris, Morado" },
+          { "nombre": "Titulación del Hilo", "valor": "1/3, 1/3" },
+          { "nombre": "Sentido", "valor": "-, -" },
+          { "nombre": "Torción del Hilo", "valor": "-, -" },
+          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-2.JPG",
+        "modalImage": "/imagenes/t2-2.JPG",
+        "user": "Diseño y Elaboración de Abrigo corto",
+        "description": "Proceso de diseño y elaboración de prendas.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Abrigo corto" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Abrigo corto con un atractivo diseño en animal print, confeccionado en un suave tejido Jacquard. Este abrigo es perfecto para añadir un toque de sofisticación y originalidad a cualquier atuendo de otoño e invierno, combinando estilo y comodidad en una sola prenda." },
+          { "nombre": "Técnica de tejido", "valor": "Jacquard" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Gris, Morado" },
+          { "nombre": "Cantidad de componentes", "valor": "5" },
+          { "nombre": "Descripción de los componentes", "valor": "Delanteros, Posterior, Manga derecha, Manga izquierda, Pretina" },
+          { "nombre": "Peso total", "valor": "700 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Tallas disponibles", "valor": "M" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Este abrigo está inspirado en el arado de la tierra y sus surcos, representando la conexión con la rica cultura agrícola de Chincheros, aportando un sentido de identidad a cada prenda." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/C11.JPG",
+        "modalImage": "/imagenes/C11-modal.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "250" },
+          { "nombre": "Valor del mercado aproximado", "valor": "450" },
+          { "nombre": "Cantidad mínima de producción", "valor": "20" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "Apoya a mujeres artesanas en el desarrollo de habilidades y su independencia económica." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "Color del hilo": "/imagenes/hilo-morado.jpg",
+      }
+    },
+
+    "CITE-CH0012": {
+    "cards": [
+      {
+        "cardImage": "/imagenes/crianza.jpg",
+        "modalImage": "/imagenes/crianza-modal.JPG",
+        "user": "Crianza y Esquila",
+        "description": "Detalles del proceso de crianza y esquila de los animales.",
+        "atributos": [
+          { "nombre": "Ubicación", "valor": "Upis - Ocongate - Quispicanchis" },
+          { "nombre": "Raza de animal", "valor": "Huacaya" },
+          { "nombre": "Color del Animal", "valor": "Blanco" },
+          { "nombre": "Edad del Animal", "valor": "6 - 2 años" },
+          { "nombre": "Registro de sanidad", "valor": "SI" },
+          { "nombre": "Registro Reproductivo", "valor": "SI" },
+          { "nombre": "Registro de Alimentación", "valor": "SI" },
+          { "nombre": "Criador", "valor": "Pascual Choque Mandura" },
+          { "nombre": "Peso de la Fibra", "valor": "4 libras" },
+          { "nombre": "Aplicó técnica 231-370:2019", "valor": "Si" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/acopio.jpg",
+        "modalImage": "/imagenes/acopio-modal.jpg",
+        "user": "Acopio y Clasificación",
+        "description": "Detalles sobre el acopio y la clasificación de la fibra.",
+        "atributos": [
+          { "nombre": "Procedencia", "valor": "Municipalidad" },
+          { "nombre": "Ubicación", "valor": "Ocongate" },
+          { "nombre": "Categorización", "valor": "Extra fina (80%)" },
+          { "nombre": "Clasificación", "valor": "Super baby" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/d2.JPG",
+        "modalImage": "/imagenes/t2-2.JPG",
+        "user": "Transformación Primaria",
+        "description": "Detalles sobre la transformación primaria de la fibra.",
+        "atributos": [
+          { "nombre": "Escamenado", "valor": "SI" },
+          { "nombre": "Cardado", "valor": "SI" },
+          { "nombre": "Lavado", "valor": "SI" },
+          { "nombre": "Hilado Artesanal", "valor": "SI" },
+          { "nombre": "Titulación", "valor": "2" },
+          { "nombre": "Sentido", "valor": "S" },
+          { "nombre": "Cantidad de Hebras", "valor": "2" },
+          { "nombre": "Color", "valor": "LF" },
+          { "nombre": "Calidad", "valor": "Baby Alpaca" },
+          { "nombre": "Peso", "valor": "500 g" }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/ela-3.JPG",
+        "modalImage": "/imagenes/t2-8.JPG",
+        "user": "Diseño y Elaboración de Cuello",
+        "description": "Proceso de diseño y confección de la prenda.",
+        "atributos": [
+          { "nombre": "Nombre de la prenda", "valor": "Cuello" },
+          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
+          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
+          { "nombre": "Descripción", "valor": "Confeccionada en suave baby alpaca, esta bufanda combina técnicas de tejido como soga y link, ofreciendo una textura elegante y cálida. Ideal para añadir un toque sofisticado a cualquier look." },
+          { "nombre": "Técnica de tejido", "valor": "Soga / Link" },
+          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
+          { "nombre": "Combinación de colores", "valor": "Crema" },
+          { "nombre": "Cantidad de componentes", "valor": "1" },
+          { "nombre": "Peso total", "valor": "280 g" },
+          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
+          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
+          { "nombre": "Historia del diseño", "valor": "Esta bufanda está inspirada en las trenzas de las mujeres de Chincheros, aportando un profundo sentido de identidad y tradición a cada prenda." }
+        ]
+      },
+      {
+        "cardImage": "/imagenes/comercializacion.JPG",
+        "modalImage": "/imagenes/comercializacion.JPG",
+        "user": "Comercialización",
+        "description": "Detalles sobre la comercialización de la prenda.",
+        "atributos": [
+          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
+          { "nombre": "Costo de producción", "valor": "150" },
+          { "nombre": "Valor del mercado aproximado", "valor": "200" },
+          { "nombre": "Cantidad mínima de producción", "valor": "10" },
+          { "nombre": "Detalles de packaging", "valor": "N/A" },
+          { "nombre": "Historia del impacto social de la prenda", "valor": "fomenta el trabajo artesanal y la sostenibilidad en la moda." }
+        ]
+      }
+      ],
+      "attributeImages": {
+        "a": "/imagenes/hilo-codigo.png",
       }
     }
+
+
 
   };
 

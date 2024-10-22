@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage-left">
-        <img src={`${process.env.PUBLIC_URL}/imagenes/logo-trace.png`} alt="Alpaca Tech Logo" className="logo" />
+        <img src={`${process.env.PUBLIC_URL}/imagenes/logo-tracestory.png`} alt="Alpaca Tech Logo" className="logo" />
 
         <h1>
           Conoce la historia detrás <br /> de <span>cada producto</span>

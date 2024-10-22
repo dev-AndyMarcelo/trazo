@@ -6,11 +6,14 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h2 className="traza">TraceStory</h2>
+        {/* Envolver TraceStory con Link para redirigir a la página de inicio */}
+        <Link to="/">
+          <h2 className="traza">TraceStory</h2>
+        </Link>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Inicio</Link></li> {/* Cambiado a Link */}
-        <li><Link to="/vista2d">Vista 2D</Link></li> {/* Cambiado a Link */}
+        <li><Link to="/">Inicio</Link></li> 
+        <li><Link to="/vista2d">Vista 2D</Link></li>
       </ul>
     </nav>
   );
