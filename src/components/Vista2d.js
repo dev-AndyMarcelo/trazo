@@ -228,64 +228,6 @@ function Vista2D() {
         'Color del hilo': '/imagenes/hilo-negro.jpg',
       }
     },
-
-    "CITE-CH003": {
-    "cards": [
-      {
-        "cardImage": "/imagenes/t2-2.JPG",
-        "modalImage": "/imagenes/hilo-rojo.jpg",
-        "user": "Transformación Secundaria",
-        "description": "Proceso de hilado y teñido de la fibra cardada",
-        "atributos": [
-          { "nombre": "Código del Hilo", "valor": "RJ2055, NM-500" },
-          { "nombre": "Color del hilo", "valor": "Rojo, Negro" },
-          { "nombre": "Titulación del Hilo", "valor": "2/28, 2/28" },
-          { "nombre": "Sentido", "valor": "S, S" },
-          { "nombre": "Torción del Hilo", "valor": "127, 37" },
-          { "nombre": "Peso del hilo", "valor": "1000 g, 1000 g" }
-        ]
-      },
-      {
-        "cardImage": "/imagenes/ela-2.JPG",
-        "modalImage": "/imagenes/t2-3.JPG",
-        "user": "Diseño y Elaboración ",
-        "description": "Proceso de diseño y elaboración de prendas.",
-        "atributos": [
-          { "nombre": "Nombre de la prenda", "valor": "Cardigan de mujer" },
-          { "nombre": "Diseñador", "valor": "Yamil Arredondo" },
-          { "nombre": "Elaborado", "valor": "CITE Textil Camélidos Cusco" },
-          { "nombre": "Descripción", "valor": "Elegante cardigan de mujer en tejido de punto con mangas pegadas, adornado con un detalle de iconografía en la pretina. Confeccionado 100% en baby alpaca, esta prenda combina confort y estilo, perfecta para la temporada de otoño-invierno." },
-          { "nombre": "Técnica de tejido", "valor": "Punto jersey" },
-          { "nombre": "Máquina utilizada", "valor": "Máquina rectilínea doméstica Brother Palie, galga 6" },
-          { "nombre": "Combinación de colores", "valor": "Rojo, Negro" },
-          { "nombre": "Cantidad de componentes", "valor": "6" },
-          { "nombre": "Descripción de los componentes", "valor": "Delantero, Espalda, Manga derecha, Manga izquierda, Pretina" },
-          { "nombre": "Peso total", "valor": "500 g" },
-          { "nombre": "Temporada recomendada", "valor": "Otoño - Invierno" },
-          { "nombre": "Tallas disponibles", "valor": "M" },
-          { "nombre": "Instrucciones de cuidado", "valor": "Lavar a mano o en seco, Usar detergente especial, Secar en plano, no exprimir, No usar blanqueador, No planchar, Evitar exposición directa al sol" },
-          { "nombre": "Historia del diseño", "valor": "Esta prenda tradicional ha sido reinterpretada y adaptada en un cardigan más comercial, manteniendo su esencia cultural y brindando un estilo moderno y versátil." }
-        ]
-      },
-      {
-        "cardImage": "/imagenes/comercializacion.JPG",
-        "modalImage": "/imagenes/comercializacion.JPG",
-        "user": "Comercialización",
-        "description": "Detalles sobre la comercialización de la prenda.",
-        "atributos": [
-          { "nombre": "Fecha de disponibilidad", "valor": "24/10/2024" },
-          { "nombre": "Costo de producción", "valor": "200" },
-          { "nombre": "Valor del mercado aproximado", "valor": "400" },
-          { "nombre": "Cantidad mínima de producción", "valor": "20" },
-          { "nombre": "Detalles de packaging", "valor": "N/A" },
-          { "nombre": "Historia del impacto social de la prenda", "valor": "Fortalece el trabajo de comunidades indígenas en la confección." }
-        ]
-      }
-      ],
-      "attributeImages": {
-        'Color del hilo': '/imagenes/hilo-negro.jpg',
-      }
-    },
     
     "CITE-CH004": {
     "cards": [
