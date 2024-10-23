@@ -1,19 +1,50 @@
-/* .vista2d-section {
-  padding: 2rem;
-  background-image: url('/public/imagenes/fondo2.png'); 
-  background-size: cover; 
-  background-position: center; 
-  background-attachment: fixed; 
-  background-repeat: no-repeat; 
-  text-align: center;
-  min-height: 100vh; 
-} */
-
 .vista2d-section {
+  position: relative;
+  padding: 2rem;
+  background-image: url('/public/imagenes/fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw; /* Asegura que la sección ocupe el 100% del ancho */
+  /* box-sizing: border-box;  */
+}
+
+.vista2d-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Capa oscura con transparencia */
+  z-index: 1;
+}
+
+/* Asegúrate de que el contenido de la sección esté por encima del overlay */
+.vista2d-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.h1-vista{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+}
+
+/* .vista2d-section {
   padding: 0px 15px 20px 40px;
   background-color: #f8f2eb;
   text-align: center;
-}
+} */
+
+
 
 /* Mejora en la disposición de las tarjetas */
 .cards-container {
@@ -21,16 +52,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap; /* Cambiado para permitir que las tarjetas se ajusten en múltiples filas */
-  margin: 60px;
+  margin: 10px;
 }
 
 .card {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 11%;
+  width: 10%;
   /* max-width: 300px; */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -57,22 +88,26 @@
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .card-content h2 {
-  font-size: 1.2rem;
+  font-size: 0.7rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  white-space: normal; /* Permite que el texto se ajuste en varias líneas si es necesario */
+  word-wrap: break-word; /* Evita que las palabras largas salgan del contenedor */
+  text-align: center; /* Centra el texto */
   margin: 0.5rem 0;
+  padding: 0 0.5rem; /* Añade un pequeño padding para evitar que el texto toque los bordes */
 }
 
 .card-content p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #555;
 }
 
 /* Ajuste para las flechas */
 .arrow {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: #6b238e;
   /* margin: 0 1rem; */
   display: inline-block;

@@ -248,7 +248,7 @@ function Vista2D() {
       {
         "cardImage": "/imagenes/ela-2.JPG",
         "modalImage": "/imagenes/t2-3.JPG",
-        "user": "Diseño y Elaboración de --------",
+        "user": "Diseño y Elaboración ",
         "description": "Proceso de diseño y elaboración de prendas.",
         "atributos": [
           { "nombre": "Nombre de la prenda", "valor": "Cardigan de mujer" },
@@ -384,8 +384,8 @@ function Vista2D() {
         ]
       },
       {
-        "cardImage": "/imagenes/comercializacion.JPG",
-        "modalImage": "/imagenes/comercializacion.JPG",
+        "cardImage": "/imagenes/chaleco.png",
+        "modalImage": "/imagenes/chaleco.png",
         "user": "Comercialización",
         "description": "Detalles sobre la comercialización de la prenda.",
         "atributos": [
@@ -445,8 +445,8 @@ function Vista2D() {
         ]
       },
       {
-        "cardImage": "/imagenes/C6.JPG",
-        "modalImage": "/imagenes/C6-modal.JPG",
+        "cardImage": "/imagenes/vestido-1.png",
+        "modalImage": "/imagenes/vestido-2.png",
         "user": "Comercialización",
         "description": "Detalles sobre la comercialización de la prenda.",
         "atributos": [
@@ -828,8 +828,8 @@ function Vista2D() {
         ]
       },
       {
-        "cardImage": "/imagenes/comercializacion.JPG",
-        "modalImage": "/imagenes/comercializacion.JPG",
+        "cardImage": "/imagenes/bufanda.png",
+        "modalImage": "/imagenes/bufanda.png",
         "user": "Comercialización",
         "description": "Detalles sobre la comercialización de la prenda.",
         "atributos": [
@@ -843,7 +843,7 @@ function Vista2D() {
       }
       ],
       "attributeImages": {
-        "a": "/imagenes/hilo-codigo.png",
+        "Técnica de tejido": "/imagenes/C12.jpeg",
       }
     }
 
@@ -890,7 +890,7 @@ function Vista2D() {
 
   return (
     <section className="vista2d-section">
-      <h1>Historia del Producto</h1>
+      <h1 className='h1-vista'>Historia del Producto</h1>
 
       {/* Campo de entrada para el código */}
       <div className="input-section-vista">

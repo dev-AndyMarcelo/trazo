@@ -20,19 +20,21 @@
 
 
 .logo {
-  max-width: 380px;
+  max-width: 350px;
   margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 3rem; /* Aumentar el tamaño del texto */
+  font-size: 2rem; /* Aumentar el tamaño del texto */
   color: #333;
   font-weight: 700;
+  margin-top: 0px;
+  
 }
 
 h1 span {
   color: #9e57ff; /* Color púrpura */
-  font-size: 4rem; /* Hacer el texto dentro del span más grande */
+  font-size: 2rem; /* Hacer el texto dentro del span más grande */
 }
 
 
@@ -110,6 +112,8 @@ button {
 button:hover {
   background-color: #9e57ff;
 }
+
+
 
 /* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
