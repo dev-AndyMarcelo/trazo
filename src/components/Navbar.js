@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importar Link
+import { NavLink } from 'react-router-dom'; // Importar NavLink en lugar de Link
 import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        {/* Envolver TraceStory con Link para redirigir a la página de inicio */}
-        <Link to="/">
+        <NavLink exact to="/" className="nav-logo" activeClassName="active">
           <h2 className="traza">TraceStory</h2>
-        </Link>
+        </NavLink>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Inicio</Link></li> 
-        <li><Link to="/vista2d">Vista 2D</Link></li>
+        <li>
+          <NavLink exact to="/" className="nav-link" activeClassName="active">Inicio</NavLink>
+        </li>
+        <li>
+          <NavLink to="/vista2d" className="nav-link" activeClassName="active">Vista 2D</NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -10,7 +10,7 @@
 } */
 
 .vista2d-section {
-  padding: 2rem;
+  padding: 0px 15px 20px 40px;
   background-color: #f8f2eb;
   text-align: center;
 }
@@ -30,7 +30,7 @@
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 15%;
+  width: 11%;
   /* max-width: 300px; */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -72,9 +72,9 @@
 
 /* Ajuste para las flechas */
 .arrow {
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: #6b238e;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   display: inline-block;
   /* align-self: center; 
   transform: translateY(-50%);  */
@@ -132,8 +132,10 @@
   }
 
   .arrow {
-      font-size: 2rem;
+      font-size: 3rem;
       margin: 1rem 0;
+      transform: rotate(90deg);
+
   }
 
   .input-section-vista {

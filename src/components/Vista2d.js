@@ -8,7 +8,7 @@ function Vista2D() {
   const navigate = useNavigate();
   // Definir los datos que cambian en base al código ingresado
   const datosPorCodigo = {
-    "CITE-CH000": {
+    ".": {
     "cards": [
       {
         "cardImage": "/imagenes/crianza.jpg",
@@ -852,7 +852,7 @@ function Vista2D() {
   };
 
   const [selectedCard, setSelectedCard] = useState(null);
-  const [inputCodigo, setInputCodigo] = useState(codigo || "CITE-CH000"); // Si no hay código en la URL, usar "1234" por defecto
+  const [inputCodigo, setInputCodigo] = useState(codigo || "."); // Si no hay código en la URL, usar "1234" por defecto
   const [cardsData, setCardsData] = useState([]);
   const [attributeImages, setAttributeImages] = useState({});
 
@@ -890,7 +890,7 @@ function Vista2D() {
 
   return (
     <section className="vista2d-section">
-      <h1>Proceso del Producto</h1>
+      <h1>Historia del Producto</h1>
 
       {/* Campo de entrada para el código */}
       <div className="input-section-vista">
